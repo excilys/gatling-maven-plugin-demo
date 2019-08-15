@@ -24,7 +24,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+         
+  <dependencies>
+  <dependency>
+    <groupId>io.gatling.highcharts</groupId>
+    <artifactId>gatling-charts-highcharts</artifactId>
+    <version>MANUALLY_REPLACE_WITH_LATEST_VERSION</version>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
+         
   <build>
     <testSourceDirectory>src/test/scala</testSourceDirectory>
     <plugins>
@@ -52,6 +61,11 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>io.gatling</groupId>
+        <artifactId>gatling-maven-plugin</artifactId>
+        <version>MANUALLY_REPLACE_WITH_LATEST_VERSION</version>
       </plugin>
       <plugin>
         <groupId>io.gatling</groupId>
