@@ -25,10 +25,10 @@ class BasicSimulation extends Simulation {
 
 
   val scn = scenario("Rest Load calls")
-
+//Request to auth token - this is a keycloak token url
     .exec(
     http("POST OAuth Req")
-      .post("http://token-provider.com/auth/realms/jhipster/protocol/openid-connect/token")
+      .post("http://token-provider.com/auth/realms/realmdemo/protocol/openid-connect/token")
       .formParam("client_id", "app")
       .formParam("username","user")
       .formParam("password","password")
